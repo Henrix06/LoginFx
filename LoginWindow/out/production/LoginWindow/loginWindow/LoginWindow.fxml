@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" style="visibility: visible;" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginWindow.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="500.0" prefWidth="392.0" style="-fx-background-color: GREY; visibility: visible;">
+         <children>
+            <Pane layoutX="27.0" layoutY="20.0" prefHeight="460.0" prefWidth="338.0" style="-fx-background-color: cyan; visibility: visible;">
+               <children>
+                  <Button fx:id="btnLogin" layoutX="75.0" layoutY="357.0" mnemonicParsing="false" onAction="#Login" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: GREY;" text="LOGIN">
+                     <font>
+                        <Font name="STIX-Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="psdField" alignment="CENTER" layoutX="86.0" layoutY="311.0" promptText="password..">
+                     <font>
+                        <Font name="Comfortaa Light" size="13.0" />
+                     </font>
+                  </PasswordField>
+                  <TextField alignment="CENTER" layoutX="88.0" layoutY="253.0" promptText="username..">
+                     <font>
+                        <Font name="Comfortaa Light" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="regButton" layoutX="190.0" layoutY="357.0" mnemonicParsing="false" onAction="#Register" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: GREY;" text="REGISTER" textAlignment="CENTER">
+                     <font>
+                        <Font name="STIX-Bold" size="11.0" />
+                     </font>
+                     <effect>
+                        <Bloom threshold="1.0" />
+                     </effect></Button>
+               </children>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="134.08" radius="87.6" width="218.32">
+                     <color>
+                        <Color red="0.26023390889167786" green="0.3056042790412903" blue="0.31578946113586426" />
+                     </color>
+                     <input>
+                        <Glow>
+                           <input>
+                              <InnerShadow />
+                           </input>
+                        </Glow>
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Pane>
+         </children>
+         <effect>
+            <InnerShadow choke="0.25" height="77.22" radius="33.16" width="57.42">
+               <color>
+                  <Color red="0.05000000074505806" green="0.9799295663833618" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Pane>
+   </children>
+</GridPane>

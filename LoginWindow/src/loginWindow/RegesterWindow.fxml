@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginWindow.RegidterWindow">
+   <children>
+      <Pane layoutX="125.0" layoutY="108.0" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: grey; -fx-padding: 2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="133.0" layoutY="49.0" text="Registration Form" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Comfortaa Light" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="184.0" text="Email" textFill="WHITE">
+               <font>
+                  <Font name="Droid Sans" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="333.0" text="Re-Type Password" textFill="WHITE">
+               <font>
+                  <Font name="Droid Sans" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="264.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="Droid Sans" size="27.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="verifyPassword" layoutX="298.0" layoutY="337.0" prefHeight="26.0" prefWidth="269.0" />
+            <TextField layoutX="300.0" layoutY="268.0" prefHeight="26.0" prefWidth="269.0" />
+            <TextField layoutX="300.0" layoutY="188.0" prefHeight="26.0" prefWidth="269.0" />
+            <Label fx:id="label1" layoutX="153.0" layoutY="407.0" prefHeight="26.0" prefWidth="289.0" textFill="RED">
+               <font>
+                  <Font name="Fira Code Medium" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="regButton" layoutX="234.0" layoutY="486.0" mnemonicParsing="false" onAction="#Register" prefHeight="46.0" prefWidth="104.0" style="-fx-background-color: CYAN;" text="REGISTER">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow height="39.21" radius="22.9" spread="0.03" width="54.39" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
