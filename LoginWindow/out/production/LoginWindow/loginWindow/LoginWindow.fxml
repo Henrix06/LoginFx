@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
@@ -14,49 +15,68 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="500.0" prefWidth="392.0" style="-fx-background-color: GREY; visibility: visible;">
+      <Pane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #093a40;">
          <children>
-            <Pane layoutX="27.0" layoutY="20.0" prefHeight="460.0" prefWidth="338.0" style="-fx-background-color: cyan; visibility: visible;">
-               <children>
-                  <Button fx:id="btnLogin" layoutX="75.0" layoutY="357.0" mnemonicParsing="false" onAction="#Login" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: GREY;" text="LOGIN">
-                     <font>
-                        <Font name="STIX-Bold" size="13.0" />
-                     </font>
-                  </Button>
-                  <PasswordField fx:id="psdField" alignment="CENTER" layoutX="86.0" layoutY="311.0" promptText="password..">
-                     <font>
-                        <Font name="Comfortaa Light" size="13.0" />
-                     </font>
-                  </PasswordField>
-                  <TextField fx:id="usrField" alignment="CENTER" layoutX="88.0" layoutY="253.0" promptText="username..">
-                     <font>
-                        <Font name="Comfortaa Light" size="13.0" />
-                     </font>
-                  </TextField>
-                  <Button fx:id="regButton" layoutX="190.0" layoutY="357.0" mnemonicParsing="false" onAction="#Register" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: GREY;" text="REGISTER" textAlignment="CENTER">
-                     <font>
-                        <Font name="STIX-Bold" size="11.0" />
-                     </font>
-                     <effect>
-                        <Bloom threshold="1.0" />
-                     </effect></Button>
-               </children>
+            <Button fx:id="btnLogin" layoutX="379.0" layoutY="292.0" mnemonicParsing="false" onAction="#Login" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: #FFFFFF;" text="LOGIN">
+               <font>
+                  <Font name="STIX-Bold" size="13.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="psdField" alignment="CENTER" layoutX="479.0" layoutY="186.0" promptText="password..">
+               <font>
+                  <Font name="Comfortaa Light" size="13.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="usrField" alignment="CENTER" layoutX="479.0" layoutY="65.0" promptText="username..">
+               <font>
+                  <Font name="Comfortaa Light" size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="regButton" layoutX="538.0" layoutY="292.0" mnemonicParsing="false" onAction="#Register" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: #FFFFFF;" text="REGISTER" textAlignment="CENTER">
+               <font>
+                  <Font name="STIX-Bold" size="11.0" />
+               </font>
                <effect>
-                  <DropShadow blurType="GAUSSIAN" height="134.08" radius="87.6" width="218.32">
-                     <color>
-                        <Color red="0.26023390889167786" green="0.3056042790412903" blue="0.31578946113586426" />
-                     </color>
-                     <input>
-                        <Glow>
-                           <input>
-                              <InnerShadow />
-                           </input>
-                        </Glow>
-                     </input>
-                  </DropShadow>
+                  <Bloom threshold="1.0" />
                </effect>
+            </Button>
+            <Pane layoutX="4.0" layoutY="6.0" prefHeight="489.0" prefWidth="275.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="409.0" fitWidth="308.0" layoutX="-14.0" layoutY="-48.0">
+                     <image>
+                        <Image url="@drawable-xxxhdpi/lOGO.png" />
+                     </image>
+                     <effect>
+                        <DropShadow height="75.64" radius="31.25" width="51.36" />
+                     </effect>
+                  </ImageView>
+               </children>
             </Pane>
+            <ImageView fitHeight="89.0" fitWidth="90.0" layoutX="350.0" layoutY="34.0">
+               <image>
+                  <Image url="@drawable-xxxhdpi/ic_account_circle_white_48dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="89.0" fitWidth="90.0" layoutX="350.0" layoutY="142.0">
+               <image>
+                  <Image url="@drawable-xxxhdpi/ic_lock_white_48dp.png" />
+               </image>
+            </ImageView>
          </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="134.08" radius="87.6" width="218.32">
+               <color>
+                  <Color red="0.26023390889167786" green="0.3056042790412903" blue="0.31578946113586426" />
+               </color>
+               <input>
+                  <Glow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </Glow>
+               </input>
+            </DropShadow>
+         </effect>
       </Pane>
    </children>
 </GridPane>

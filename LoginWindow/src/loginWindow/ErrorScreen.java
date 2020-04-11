@@ -15,7 +15,7 @@ public class ErrorScreen {
         Node node = (Node) actionEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.close();
-        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("RegesterWindow.fxml")));
+        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("RegisterWindow.fxml")));
         stage.setScene(scene);
         stage.show();
     }

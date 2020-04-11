@@ -2,41 +2,32 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane blendMode="MULTIPLY" prefHeight="261.0" prefWidth="604.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginWindow.ErrorScreen">
-    <Pane layoutX="22.0" layoutY="23.0" prefHeight="216.0" prefWidth="564.0" style="-fx-background-color: CYAN;" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="23.0">
-      <effect>
-         <DropShadow blurType="GAUSSIAN" height="255.0" radius="127.0" spread="0.18" width="255.0">
-            <color>
-               <Color red="0.0416666679084301" green="0.9520833492279053" blue="1.0" />
-            </color>
-         </DropShadow>
-      </effect>
+<AnchorPane blendMode="MULTIPLY" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginWindow.ErrorScreen">
+    <Pane layoutX="22.0" layoutY="23.0" prefHeight="216.0" prefWidth="564.0" style="-fx-background-color: #093a40;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <children>
-         <Label layoutX="158.0" layoutY="67.0" text="INCORRECT CREDENTIALS" textAlignment="CENTER" textFill="WHITE">
+         <Label layoutX="113.0" layoutY="127.0" text="INCORRECT CREDENTIALS" textAlignment="CENTER" textFill="WHITE">
             <font>
-               <Font name="DejaVu Sans Bold" size="19.0" />
+               <Font name="DejaVu Sans Bold" size="12.0" />
             </font>
          </Label>
-         <Button fx:id="retryBtn" layoutX="158.0" layoutY="146.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="26.0" prefWidth="83.0" text="RETRY">
+         <Button fx:id="retryBtn" layoutX="106.0" layoutY="159.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="26.0" prefWidth="83.0" text="RETRY">
             <effect>
                <Reflection topOpacity="0.37" />
             </effect>
          </Button>
-         <Button fx:id="registerBtn" layoutX="327.0" layoutY="146.0" mnemonicParsing="false" onAction="#RegisterWindow" style="-fx-background-color: TOMATO\;" text="REGISTER">
+         <Button fx:id="registerBtn" layoutX="213.0" layoutY="159.0" mnemonicParsing="false" onAction="#RegisterWindow" style="-fx-background-color: TOMATO\;" text="REGISTER">
             <effect>
                <Reflection fraction="0.6" topOpacity="0.41" />
             </effect>
          </Button>
+         <ImageView fitHeight="110.0" fitWidth="113.0" layoutX="141.0" layoutY="15.0">
+            <image>
+               <Image url="@drawable-xxxhdpi/warning.png" />
+            </image>
+         </ImageView>
       </children></Pane>
-   <effect>
-      <InnerShadow choke="0.42">
-         <color>
-            <Color green="1.0" blue="0.7666666507720947" />
-         </color>
-      </InnerShadow>
-   </effect>
 </AnchorPane>
